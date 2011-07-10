@@ -49,7 +49,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<!-- All JavaScript at the bottom, except for Modernizr and Respond.
